@@ -1,0 +1,43 @@
+<div class="list-container">
+    <h2>Library Books</h2>
+  
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <input
+        type="text"
+        [(ngModel)]="searchTerm"
+        (input)="filterBooks()"
+        placeholder="Search by title or author"
+        class="search-input"
+      />
+    </div>
+  
+    <!-- Book List Table -->
+    <table class="book-table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>ISBN</th>
+          <th>Available</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of filteredBooks">
+          <td>{{ book.title }}</td>
+          <td>{{ book.author }}</td>
+          <td>{{ book.isbn }}</td>
+          <td>{{ book.available ? 'Yes' : 'No' }}</td>
+          <td>
+            <button (click)="editBook(book.id)" class="btn action-btn">Edit</button>
+            <button (click)="deleteBook(book.id)" class="btn action-btn danger">
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button (click)="navigateToAddBook()" class="btn primary">Add Book</button>
+</div>
+  

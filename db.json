@@ -1,0 +1,46 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Angular Basics",
+      "author": "John Doe",
+      "isbn": "123456",
+      "available": true
+    },
+    {
+      "id": "2",
+      "title": "Advanced Angular",
+      "author": "Jane Smith",
+      "isbn": "654321",
+      "available": false
+    },
+    {
+      "id": "3",
+      "title": "Learning TypeScript",
+      "author": "Mark Johnson",
+      "isbn": "987654",
+      "available": true
+    },
+    {
+      "id": "4",
+      "title": "JavaScript for Beginners",
+      "author": "Alice Brown",
+      "isbn": "345678",
+      "available": true
+    },
+    {
+      "id": "5",
+      "title": "black hat hacking using go",
+      "author": "krushna",
+      "isbn": "101010",
+      "available": false
+    },
+    {
+      "id": 6,
+      "title": "hiiii",
+      "author": "helloooo",
+      "isbn": "121212",
+      "available": true
+    }
+  ]
+}
